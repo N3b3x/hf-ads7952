@@ -97,7 +97,7 @@ $(function(){initNavTree('structads7952_1_1ChannelReadings.html',''); initResiza
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structads7952_1_1ChannelReadings-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">ads7952::ChannelReadings Struct Reference</div></div>
+  <div class="headertitle"><div class="title">ads7952::ChannelReadings Struct Reference<div class="ingroups"><a class="el" href="group__ads7952__driver.html">ADS7952 Driver</a> &raquo; <a class="el" href="group__ads7952__types.html">Driver Types</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -106,12 +106,13 @@ $(function(){initNavTree('structads7952_1_1ChannelReadings.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8115300810df4ba1213734edb52b8642" id="r_a8115300810df4ba1213734edb52b8642"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8115300810df4ba1213734edb52b8642">ok</a> () const noexcept</td></tr>
+<tr class="memdesc:a8115300810df4ba1213734edb52b8642"><td class="mdescLeft">&#160;</td><td class="mdescRight">True when <a class="el" href="#ae1a2fb17d5eb0c998b8274d95bcca88c">error</a> equals <a class="el" href="group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115" title="Operation succeeded.">Error::Ok</a>.  <br /></td></tr>
 <tr class="separator:a8115300810df4ba1213734edb52b8642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1804f6969576b74e5fc8007c1a47fc6c" id="r_a1804f6969576b74e5fc8007c1a47fc6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1804f6969576b74e5fc8007c1a47fc6c">hasChannel</a> (uint8_t ch) const noexcept</td></tr>
 <tr class="memdesc:a1804f6969576b74e5fc8007c1a47fc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a specific channel has valid data in this reading.  <br /></td></tr>
 <tr class="separator:a1804f6969576b74e5fc8007c1a47fc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa699c38ba7b2273c66f54e61f3db53be" id="r_aa699c38ba7b2273c66f54e61f3db53be"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa699c38ba7b2273c66f54e61f3db53be">validChannelCount</a> () const noexcept</td></tr>
-<tr class="memdesc:aa699c38ba7b2273c66f54e61f3db53be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of channels with valid data.  <br /></td></tr>
+<tr class="memdesc:aa699c38ba7b2273c66f54e61f3db53be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count channels currently marked valid.  <br /></td></tr>
 <tr class="separator:aa699c38ba7b2273c66f54e61f3db53be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -125,7 +126,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a097054692950e6f43c4959096c952532" id="r_a097054692950e6f43c4959096c952532"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a097054692950e6f43c4959096c952532">valid_mask</a> = 0</td></tr>
 <tr class="memdesc:a097054692950e6f43c4959096c952532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitmask indicating which channels contain valid data.  <br /></td></tr>
 <tr class="separator:a097054692950e6f43c4959096c952532"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a2fb17d5eb0c998b8274d95bcca88c" id="r_ae1a2fb17d5eb0c998b8274d95bcca88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a2fb17d5eb0c998b8274d95bcca88c">error</a> = <a class="el" href="namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115">Error::Ok</a></td></tr>
+<tr class="memitem:ae1a2fb17d5eb0c998b8274d95bcca88c" id="r_ae1a2fb17d5eb0c998b8274d95bcca88c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ads7952__types.html#gab2930d74716da4599f87f3939ac383a1">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1a2fb17d5eb0c998b8274d95bcca88c">error</a> = <a class="el" href="group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115">Error::Ok</a></td></tr>
 <tr class="separator:ae1a2fb17d5eb0c998b8274d95bcca88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -135,7 +136,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00120">120</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00148">148</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1804f6969576b74e5fc8007c1a47fc6c" name="a1804f6969576b74e5fc8007c1a47fc6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1804f6969576b74e5fc8007c1a47fc6c">&#9670;&#160;</a></span>hasChannel()</h2>
@@ -162,9 +163,9 @@ Static Public Attributes</h2></td></tr>
 
 <p>Check if a specific channel has valid data in this reading. </p>
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00146">146</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00175">175</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ads7952__types_8hpp_source.html#l00121">MAX_CHANNELS</a>, and <a class="el" href="ads7952__types_8hpp_source.html#l00139">valid_mask</a>.</p>
+<p class="reference">References <a class="el" href="ads7952__types_8hpp_source.html#l00149">MAX_CHANNELS</a>, and <a class="el" href="ads7952__types_8hpp_source.html#l00167">valid_mask</a>.</p>
 
 </div>
 </div>
@@ -191,9 +192,11 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00143">143</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p>True when <a class="el" href="#ae1a2fb17d5eb0c998b8274d95bcca88c">error</a> equals <a class="el" href="group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115" title="Operation succeeded.">Error::Ok</a>. </p>
 
-<p class="reference">References <a class="el" href="ads7952__types_8hpp_source.html#l00141">error</a>, and <a class="el" href="namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115">ads7952::Ok</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00172">172</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="ads7952__types_8hpp_source.html#l00169">error</a>, and <a class="el" href="group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115">ads7952::Ok</a>.</p>
 
 </div>
 </div>
@@ -220,11 +223,12 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Count the number of channels with valid data. </p>
+<p>Count channels currently marked valid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Number of set bits in <a class="el" href="#a097054692950e6f43c4959096c952532">valid_mask</a> for channels [0..11]. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00151">151</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00183">183</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="ads7952__types_8hpp_source.html#l00139">valid_mask</a>.</p>
+<p class="reference">References <a class="el" href="ads7952__types_8hpp_source.html#l00167">valid_mask</a>.</p>
 
 </div>
 </div>
@@ -243,7 +247,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Raw counts per channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00123">123</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00151">151</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
 </div>
 </div>
@@ -254,14 +258,14 @@ Static Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1">Error</a> ads7952::ChannelReadings::error = <a class="el" href="namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115">Error::Ok</a></td>
+          <td class="memname"><a class="el" href="group__ads7952__types.html#gab2930d74716da4599f87f3939ac383a1">Error</a> ads7952::ChannelReadings::error = <a class="el" href="group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1aa60852f204ed8028c1c58808b746d115">Error::Ok</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00141">141</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00169">169</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ads7952__types_8hpp_source.html#l00143">ok()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00107">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ads7952__types_8hpp_source.html#l00172">ok()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00117">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>.</p>
 
 </div>
 </div>
@@ -285,9 +289,9 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00121">121</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00149">149</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ads7952__types_8hpp_source.html#l00146">hasChannel()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00107">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ads7952__types_8hpp_source.html#l00175">hasChannel()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00117">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>.</p>
 
 </div>
 </div>
@@ -308,9 +312,9 @@ Static Public Attributes</h2></td></tr>
 <p>Use <code>hasChannel(ch)</code> for single-channel checks, or inspect the mask directly for bulk operations: </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (uint8_t ch = 0; ch &lt; 12; ++ch)</div>
 <div class="line">  <span class="keywordflow">if</span> (readings.valid_mask &amp; (1U &lt;&lt; ch)) { ... }</div>
 </div><!-- fragment --> 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00139">139</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00167">167</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ads7952__types_8hpp_source.html#l00146">hasChannel()</a>, and <a class="el" href="ads7952__types_8hpp_source.html#l00151">validChannelCount()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ads7952__types_8hpp_source.html#l00175">hasChannel()</a>, and <a class="el" href="ads7952__types_8hpp_source.html#l00183">validChannelCount()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +332,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Converted voltages per channel. </p>
 
-<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00124">124</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__types_8hpp_source.html#l00152">152</a> of file <a class="el" href="ads7952__types_8hpp_source.html">ads7952_types.hpp</a>.</p>
 
 </div>
 </div>

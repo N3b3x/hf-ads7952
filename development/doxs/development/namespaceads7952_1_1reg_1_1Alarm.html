@@ -95,17 +95,20 @@ $(function(){initNavTree('namespaceads7952_1_1reg_1_1Alarm.html',''); initResiza
   <div class="summary">
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">ads7952::reg::Alarm Namespace Reference</div></div>
+  <div class="headertitle"><div class="title">ads7952::reg::Alarm Namespace Reference<div class="ingroups"><a class="el" href="group__ads7952__driver.html">ADS7952 Driver</a> &raquo; <a class="el" href="group__ads7952__registers.html">Register and Frame Constants</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aed1072edc4e31dd178f44e5880ca3165" id="r_aed1072edc4e31dd178f44e5880ca3165"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed1072edc4e31dd178f44e5880ca3165">ChannelInGroup</a> (uint8_t ch_in_group) noexcept</td></tr>
+<tr class="memdesc:aed1072edc4e31dd178f44e5880ca3165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode alarm channel index within a 4-channel group.  <br /></td></tr>
 <tr class="separator:aed1072edc4e31dd178f44e5880ca3165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a768a3dfc2edaedf4bb095dd4d7d94bdc" id="r_a768a3dfc2edaedf4bb095dd4d7d94bdc"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a768a3dfc2edaedf4bb095dd4d7d94bdc">Threshold12To10</a> (uint16_t adc_12bit) noexcept</td></tr>
+<tr class="memdesc:a768a3dfc2edaedf4bb095dd4d7d94bdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert 12-bit ADC threshold to 10-bit alarm register format.  <br /></td></tr>
 <tr class="separator:a768a3dfc2edaedf4bb095dd4d7d94bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7773e5e6ee4cb2e39fd146b40adf625" id="r_af7773e5e6ee4cb2e39fd146b40adf625"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7773e5e6ee4cb2e39fd146b40adf625">GroupMode</a> (uint8_t channel) noexcept</td></tr>
+<tr class="memdesc:af7773e5e6ee4cb2e39fd146b40adf625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve alarm programming mode code for a global channel.  <br /></td></tr>
 <tr class="separator:af7773e5e6ee4cb2e39fd146b40adf625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -143,9 +146,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00134">134</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p>Encode alarm channel index within a 4-channel group. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ch_in_group</td><td>Channel offset in group [0..3]. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Encoded channel-in-group bits [15:14]. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00296">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00168">168</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00315">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
 
 </div>
 </div>
@@ -172,9 +184,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00149">149</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p>Resolve alarm programming mode code for a global channel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">channel</td><td>Global channel index. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>One of ALARM_GROUP_0..ALARM_GROUP_3 mode constants. </dd></dl>
 
-<p class="reference">References <a class="el" href="ads7952__registers_8hpp_source.html#l00030">ads7952::reg::Mode::ALARM_GROUP_0</a>, <a class="el" href="ads7952__registers_8hpp_source.html#l00031">ads7952::reg::Mode::ALARM_GROUP_1</a>, <a class="el" href="ads7952__registers_8hpp_source.html#l00032">ads7952::reg::Mode::ALARM_GROUP_2</a>, and <a class="el" href="ads7952__registers_8hpp_source.html#l00033">ads7952::reg::Mode::ALARM_GROUP_3</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00193">193</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="ads7952__registers_8hpp_source.html#l00038">ads7952::reg::Mode::ALARM_GROUP_0</a>, <a class="el" href="ads7952__registers_8hpp_source.html#l00039">ads7952::reg::Mode::ALARM_GROUP_1</a>, <a class="el" href="ads7952__registers_8hpp_source.html#l00040">ads7952::reg::Mode::ALARM_GROUP_2</a>, and <a class="el" href="ads7952__registers_8hpp_source.html#l00041">ads7952::reg::Mode::ALARM_GROUP_3</a>.</p>
 
 </div>
 </div>
@@ -201,9 +222,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00144">144</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p>Convert 12-bit ADC threshold to 10-bit alarm register format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">adc_12bit</td><td>Threshold in 12-bit ADC count units. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Threshold bits [9:0] expected by alarm register. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00296">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00183">183</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00315">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
 
 </div>
 </div>
@@ -228,7 +258,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00142">142</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00176">176</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
 
 </div>
 </div>
@@ -252,9 +282,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00141">141</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00175">175</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00296">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00315">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
 
 </div>
 </div>
@@ -278,9 +308,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00138">138</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00172">172</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00296">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00315">ads7952::ADS7952&lt; SpiType &gt;::ProgramAlarm()</a>.</p>
 
 </div>
 </div>
@@ -304,7 +334,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00139">139</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00173">173</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
 
 </div>
 </div>

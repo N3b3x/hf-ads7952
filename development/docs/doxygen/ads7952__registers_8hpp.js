@@ -1,9 +1,9 @@
 var ads7952__registers_8hpp =
 [
-    [ "Auto1ChannelBit", "ads7952__registers_8hpp.html#ad0d61cdf97546e9e5c121bd9eaeb6970", null ],
-    [ "Auto2LastChannel", "ads7952__registers_8hpp.html#af5a445a15e13c3483f645a9e94a795af", null ],
+    [ "Auto1ChannelBit", "ads7952__registers_8hpp.html#gad0d61cdf97546e9e5c121bd9eaeb6970", null ],
+    [ "Auto2LastChannel", "ads7952__registers_8hpp.html#gaf5a445a15e13c3483f645a9e94a795af", null ],
     [ "ChannelInGroup", "ads7952__registers_8hpp.html#aed1072edc4e31dd178f44e5880ca3165", null ],
-    [ "ChannelSelect", "ads7952__registers_8hpp.html#a62fd68cec3d8e56351356f2f59e1ea25", null ],
+    [ "ChannelSelect", "ads7952__registers_8hpp.html#ga62fd68cec3d8e56351356f2f59e1ea25", null ],
     [ "GetChannel", "ads7952__registers_8hpp.html#a7252166e76d9f499056aaed58827444f", null ],
     [ "GetData", "ads7952__registers_8hpp.html#ac22d967e796409f5c035b3c6e8f224de", null ],
     [ "GroupMode", "ads7952__registers_8hpp.html#af7773e5e6ee4cb2e39fd146b40adf625", null ],

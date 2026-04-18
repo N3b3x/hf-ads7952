@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['no_5freset_5fcounter_0',['NO_RESET_COUNTER',['../namespaceads7952_1_1reg.html#a357039d46067615e2593a2ef20d9b028',1,'ads7952::reg']]],
-  ['normal_1',['Normal',['../namespaceads7952.html#a569354cfd3dd8a02a64787bd10e36abda960b44c579bc2f6818d2daaf9e4c16f0',1,'ads7952']]],
-  ['normal_5foperation_2',['NORMAL_OPERATION',['../namespaceads7952_1_1reg_1_1GPIOProg.html#a2800c9d09b0296ee2abd4a3778347bdb',1,'ads7952::reg::GPIOProg']]],
-  ['notinitialized_3',['NotInitialized',['../namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1a9646ad3a1c3e708b4fa8b4b4270fbab6',1,'ads7952']]],
-  ['num_5falarm_5fgroups_4',['NUM_ALARM_GROUPS',['../namespaceads7952_1_1reg.html#ad67d64a86056e9a76a1f9af87547b51d',1,'ads7952::reg']]],
-  ['num_5fchannels_5',['NUM_CHANNELS',['../namespaceADS7952__CFG.html#ab060c3fccda29b0559f6dbb7ee04718c',1,'ADS7952_CFG::NUM_CHANNELS'],['../namespaceads7952_1_1reg.html#a61c43ac5c3ec9fd066daba8bb014e24e',1,'ads7952::reg::NUM_CHANNELS']]],
-  ['num_5fgpio_5fpins_6',['NUM_GPIO_PINS',['../namespaceads7952_1_1reg.html#ac4827a579b0c9336fdaa46b26bd6df5e',1,'ads7952::reg']]]
+  ['manual_0',['Manual',['../group__ads7952__types.html#gga610f14a0a9791582a61c2ab966da8285ae1ba155a9f2e8c3be94020eef32a0301',1,'ads7952']]],
+  ['manual_1',['MANUAL',['../namespaceads7952_1_1reg_1_1Mode.html#acfe14e40b21fa30cc808f50abea7b349',1,'ads7952::reg::Mode']]],
+  ['mask_2',['MASK',['../namespaceads7952_1_1reg_1_1Mode.html#a9688e252006f4554a1c63a9313585a7d',1,'ads7952::reg::Mode']]],
+  ['mask_20helpers_3',['Channel Mask Helpers',['../group__ads7952__channel__masks.html',1,'']]],
+  ['masks_4',['GPIO Bit Masks',['../group__ads7952__gpio__bits.html',1,'']]],
+  ['max_5fchannels_5',['MAX_CHANNELS',['../structads7952_1_1ChannelReadings.html#a28ecacc9dbdf6b49fafa00a33576e680',1,'ads7952::ChannelReadings']]],
+  ['max_5fcount_6',['MAX_COUNT',['../group__ads7952__config.html#gab1969f7fd3aa2843d081d0ae9dce91a4',1,'ADS7952_CFG::MAX_COUNT'],['../namespaceads7952_1_1reg.html#ab89c4ed6c28bde3bd75af991190d5805',1,'ads7952::reg::MAX_COUNT']]],
+  ['max_5fretries_7',['MAX_RETRIES',['../group__ads7952__config.html#ga8d25cb204be04f943ba3ad31eefe17eb',1,'ADS7952_CFG']]],
+  ['md_5freadme_8',['@ianchor{} md_README',['../index.html#autotoc_md0',1,'']]],
+  ['mode_9',['Mode',['../group__ads7952__types.html#ga610f14a0a9791582a61c2ab966da8285',1,'ads7952']]],
+  ['mode_20control_10',['Mode Control',['../index.html#autotoc_md10',1,'']]],
+  ['modechangefailed_11',['ModeChangeFailed',['../group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1ace72c0ccda672af1c969a4d6586f07f9',1,'ads7952']]]
 ];

@@ -44,6 +44,7 @@ var NAVTREE =
       [ "🤝 Contributing", "index.html#autotoc_md15", null ],
       [ "📄 License", "index.html#autotoc_md16", null ]
     ] ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -74,8 +75,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"ads7952_8hpp.html",
-"namespaceads7952.html#a44dcee7079caeded0063930b8e30b3aaaa4b03abff0e37da035d6fc0f9a4b1235"
+"ads7952_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

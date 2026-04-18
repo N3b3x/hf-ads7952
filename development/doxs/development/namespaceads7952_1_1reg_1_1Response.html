@@ -94,15 +94,17 @@ $(function(){initNavTree('namespaceads7952_1_1reg_1_1Response.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">ads7952::reg::Response Namespace Reference</div></div>
+  <div class="headertitle"><div class="title">ads7952::reg::Response Namespace Reference<div class="ingroups"><a class="el" href="group__ads7952__driver.html">ADS7952 Driver</a> &raquo; <a class="el" href="group__ads7952__registers.html">Register and Frame Constants</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a7252166e76d9f499056aaed58827444f" id="r_a7252166e76d9f499056aaed58827444f"><td class="memItemLeft" align="right" valign="top">constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7252166e76d9f499056aaed58827444f">GetChannel</a> (uint16_t frame) noexcept</td></tr>
+<tr class="memdesc:a7252166e76d9f499056aaed58827444f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract channel descriptor from response frame DO[15:12].  <br /></td></tr>
 <tr class="separator:a7252166e76d9f499056aaed58827444f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac22d967e796409f5c035b3c6e8f224de" id="r_ac22d967e796409f5c035b3c6e8f224de"><td class="memItemLeft" align="right" valign="top">constexpr uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac22d967e796409f5c035b3c6e8f224de">GetData</a> (uint16_t frame) noexcept</td></tr>
+<tr class="memdesc:ac22d967e796409f5c035b3c6e8f224de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract conversion data from response frame DO[11:0].  <br /></td></tr>
 <tr class="separator:ac22d967e796409f5c035b3c6e8f224de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -129,9 +131,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00163">163</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p>Extract channel descriptor from response frame DO[15:12]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>16-bit ADC response frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reported channel index. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00107">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00074">ads7952::ADS7952&lt; SpiType &gt;::ReadChannel()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00213">213</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00117">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00083">ads7952::ADS7952&lt; SpiType &gt;::ReadChannel()</a>.</p>
 
 </div>
 </div>
@@ -158,9 +169,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00166">166</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+<p>Extract conversion data from response frame DO[11:0]. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td>16-bit ADC response frame. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Raw 12-bit conversion value. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00107">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00074">ads7952::ADS7952&lt; SpiType &gt;::ReadChannel()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ads7952__registers_8hpp_source.html#l00221">221</a> of file <a class="el" href="ads7952__registers_8hpp_source.html">ads7952_registers.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ads7952_8ipp_source.html#l00117">ads7952::ADS7952&lt; SpiType &gt;::ReadAllChannels()</a>, and <a class="el" href="ads7952_8ipp_source.html#l00083">ads7952::ADS7952&lt; SpiType &gt;::ReadChannel()</a>.</p>
 
 </div>
 </div>

@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['ianchor_20md_5freadme_0',['@ianchor{} md_README',['../index.html#autotoc_md0',1,'']]],
-  ['installation_1',['🔧 Installation',['../index.html#autotoc_md7',1,'']]],
-  ['invalid_5fconversions_5fafter_5fpowerup_2',['INVALID_CONVERSIONS_AFTER_POWERUP',['../namespaceads7952_1_1reg.html#acfc3914ac693596427647dfa041cf65f',1,'ads7952::reg']]],
-  ['invalidchannel_3',['InvalidChannel',['../namespaceads7952.html#ab2930d74716da4599f87f3939ac383a1a94a9e4213f08b322090d83fa5a8be5e4',1,'ads7952']]],
-  ['isinitialized_4',['IsInitialized',['../classads7952_1_1ADS7952.html#a09fe495cb38e5e1e608bb3c80353d3d9',1,'ads7952::ADS7952']]]
+  ['haschannel_0',['hasChannel',['../structads7952_1_1ChannelReadings.html#a1804f6969576b74e5fc8007c1a47fc6c',1,'ads7952::ChannelReadings']]],
+  ['helpers_1',['Helpers',['../group__ads7952__channel__masks.html',1,'Channel Mask Helpers'],['../group__ads7952__conversion.html',1,'Conversion Helpers']]],
+  ['hf_20ads7952_20driver_2',['HF ADS7952 Driver',['../index.html',1,'HF-ADS7952 Driver'],['../index.html#autotoc_md2',1,'HF-ADS7952 Driver']]],
+  ['high_3',['High',['../group__ads7952__types.html#gga80bb06625f3b99074431f3ef7699c659a655d20c1ca69519ca647684edbb2db35',1,'ads7952']]],
+  ['high_5fregister_4',['HIGH_REGISTER',['../namespaceads7952_1_1reg_1_1Alarm.html#a7b56b2e63237d614a45ded6a16763d2b',1,'ads7952::reg::Alarm']]]
 ];

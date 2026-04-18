@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['valid_5fmask_0',['valid_mask',['../structads7952_1_1ChannelReadings.html#a097054692950e6f43c4959096c952532',1,'ads7952::ChannelReadings']]],
-  ['validchannelcount_1',['validChannelCount',['../structads7952_1_1ChannelReadings.html#aa699c38ba7b2273c66f54e61f3db53be',1,'ads7952::ChannelReadings']]],
-  ['voltage_2',['voltage',['../structads7952_1_1ReadResult.html#a889744cb7fac2c0d68340f749a54a356',1,'ads7952::ReadResult::voltage'],['../structads7952_1_1ChannelReadings.html#ae7c5cf66df46712f0a6773271a6d463b',1,'ads7952::ChannelReadings::voltage']]],
-  ['voltagetocount_3',['VoltageToCount',['../classads7952_1_1ADS7952.html#a99b3f238a59aacfcbd0d95c5d8f04cb6',1,'ads7952::ADS7952::VoltageToCount()'],['../namespaceads7952.html#aa8e5e696c49e1573e7f615e4e3b36ffa',1,'ads7952::VoltageToCount(float voltage, float vref) noexcept']]],
-  ['vref_4',['Vref',['../namespaceads7952.html#a70a3487be9a660a4a77195cf09dcf4bfaafc9b5958a881eb8ea209ca962a3dbb8',1,'ads7952']]]
+  ['table_20of_20contents_0',['📚 Table of Contents',['../index.html#autotoc_md3',1,'']]],
+  ['threshold12to10_1',['Threshold12To10',['../namespaceads7952_1_1reg_1_1Alarm.html#a768a3dfc2edaedf4bb095dd4d7d94bdc',1,'ads7952::reg::Alarm']]],
+  ['time_20configuration_2',['Compile-Time Configuration',['../group__ads7952__config.html',1,'']]],
+  ['timeout_3',['Timeout',['../group__ads7952__types.html#ggab2930d74716da4599f87f3939ac383a1ac85a251cc457840f1e032f1b733e9398',1,'ads7952']]],
+  ['transfer_4',['transfer',['../classads7952_1_1SpiInterface.html#adb6fbe4ae21226d2e6de2f25b962378c',1,'ads7952::SpiInterface']]],
+  ['transport_20abstraction_5',['SPI Transport Abstraction',['../group__ads7952__transport.html',1,'']]],
+  ['twovref_6',['TwoVref',['../group__ads7952__types.html#gga70a3487be9a660a4a77195cf09dcf4bfad3b8400dadedb976e945f32bda0a4456',1,'ads7952']]],
+  ['types_7',['Driver Types',['../group__ads7952__types.html',1,'']]]
 ];

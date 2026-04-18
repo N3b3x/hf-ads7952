@@ -1,5 +1,6 @@
-warning: Tag 'CLASS_DIAGRAMS' at line 287 of file '/tmp/doxyfile.TVZZp2' has become obsolete.
+warning: Tag 'CLASS_DIAGRAMS' at line 287 of file '/tmp/doxyfile.ET3LV1' has become obsolete.
          To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:449: warning: unbalanced grouping commands
 error: Style sheet '_config/doxygen-extensions/doxygen-awesome-css/doxygen-awesome.css' specified by HTML_EXTRA_STYLESHEET does not exist!
 Doxygen version used: 1.10.0 (ebc57c6dd303a980bd19dd74b8b61c8f3f5180ca)
 Searching for include files...
@@ -96,6 +97,62 @@ Parsing code for file README.md...
 Generating code for file src/ads7952.ipp...
 Generating file documentation...
 Generating docs for file inc/ads7952.hpp...
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:31: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ADS7952(SpiType&,float,float)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:31: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ADS7952(SpiType&,float,float)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:31: warning: argument 'spi' from the argument list of ads7952::ADS7952::ADS7952 has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:31: warning: argument 'vref' from the argument list of ads7952::ADS7952::ADS7952 has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:31: warning: argument 'va' from the argument list of ads7952::ADS7952::ADS7952 has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:173: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::CountToVoltage(uint16_t) const'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:173: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::CountToVoltage(uint16_t) const'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:173: warning: argument 'count' from the argument list of ads7952::ADS7952::CountToVoltage has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:44: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::EnsureInitialized(bool)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:44: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::EnsureInitialized(bool)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:44: warning: argument 'force' from the argument list of ads7952::ADS7952::EnsureInitialized has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:205: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::EnterAuto1Mode(bool)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:205: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::EnterAuto1Mode(bool)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:205: warning: argument 'reset_counter' from the argument list of ads7952::ADS7952::EnterAuto1Mode has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:216: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::EnterAuto2Mode(bool)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:216: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::EnterAuto2Mode(bool)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:216: warning: argument 'reset_counter' from the argument list of ads7952::ADS7952::EnterAuto2Mode has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:193: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::EnterManualMode(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:193: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::EnterManualMode(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:193: warning: argument 'channel' from the argument list of ads7952::ADS7952::EnterManualMode has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:314: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ProgramAlarm(uint8_t,AlarmBound,uint16_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:314: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ProgramAlarm(uint8_t,AlarmBound,uint16_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:314: warning: argument 'channel' from the argument list of ads7952::ADS7952::ProgramAlarm has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:314: warning: argument 'bound' from the argument list of ads7952::ADS7952::ProgramAlarm has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:314: warning: argument 'threshold_12bit' from the argument list of ads7952::ADS7952::ProgramAlarm has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:355: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ProgramAlarmVoltage(uint8_t,AlarmBound,float)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:355: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ProgramAlarmVoltage(uint8_t,AlarmBound,float)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:355: warning: argument 'channel' from the argument list of ads7952::ADS7952::ProgramAlarmVoltage has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:355: warning: argument 'bound' from the argument list of ads7952::ADS7952::ProgramAlarmVoltage has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:355: warning: argument 'voltage' from the argument list of ads7952::ADS7952::ProgramAlarmVoltage has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:231: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ProgramAuto1Channels(uint16_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:231: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ProgramAuto1Channels(uint16_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:231: warning: argument 'channel_mask' from the argument list of ads7952::ADS7952::ProgramAuto1Channels has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:249: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ProgramAuto2LastChannel(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:249: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ProgramAuto2LastChannel(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:249: warning: argument 'last_channel' from the argument list of ads7952::ADS7952::ProgramAuto2LastChannel has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:265: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ProgramGPIO(const GPIOConfig&)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:265: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ProgramGPIO(const GPIOConfig&)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:265: warning: argument 'config' from the argument list of ads7952::ADS7952::ProgramGPIO has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:116: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ReadAllChannels()'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:116: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ReadAllChannels()'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:82: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::ReadChannel(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:82: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::ReadChannel(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:82: warning: argument 'channel' from the argument list of ads7952::ADS7952::ReadChannel has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:395: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::SetGPIOOutputs(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:395: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::SetGPIOOutputs(uint8_t)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:395: warning: argument 'gpio_state' from the argument list of ads7952::ADS7952::SetGPIOOutputs has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:380: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::SetPowerDown(PowerDown)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:380: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::SetPowerDown(PowerDown)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:380: warning: argument 'pd' from the argument list of ads7952::ADS7952::SetPowerDown has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:366: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::SetRange(Range)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:366: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::SetRange(Range)'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:366: warning: argument 'range' from the argument list of ads7952::ADS7952::SetRange has multiple @param documentation sections
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:180: warning: Found recursive @copybrief or @copydoc relation for argument 'ADS7952::VoltageToCount(float) const'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:180: warning: Found recursive @copydetails or @copydoc relation for argument 'ADS7952::VoltageToCount(float) const'.
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:180: warning: argument 'voltage' from the argument list of ads7952::ADS7952::VoltageToCount has multiple @param documentation sections
 index:1: warning: expected whitespace after \{ command
 /home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:1: warning: expected whitespace after \{ command
 /home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:20: warning: unable to resolve reference to '-overview' for \ref command
@@ -170,6 +227,6 @@ Generating example index...
 finalizing index lists...
 writing tag file...
 Running plantuml with JAVA...
-type lookup cache used 402/65536 hits=413 misses=404
-symbol lookup cache used 504/65536 hits=2474 misses=504
+type lookup cache used 402/65536 hits=458 misses=404
+symbol lookup cache used 524/65536 hits=2844 misses=524
 finished...
