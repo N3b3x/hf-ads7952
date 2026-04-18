@@ -2,6 +2,7 @@
  * @file ads7952_spi_interface.hpp
  * @brief CRTP-based SPI bus interface for ADS7952 driver
  * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ * @ingroup ads7952_transport
  */
 #pragma once
 #include <cstddef>
@@ -10,6 +11,13 @@
 namespace ads7952 {
 
 /**
+ * @defgroup ads7952_transport SPI Transport Abstraction
+ * @ingroup ads7952_driver
+ * @brief CRTP transport contract implemented by platform SPI backends.
+ */
+
+/**
+ * @ingroup ads7952_transport
  * @brief CRTP-based template interface for SPI bus operations
  *
  * This template class provides a hardware-agnostic interface for SPI

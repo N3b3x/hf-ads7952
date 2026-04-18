@@ -2,6 +2,7 @@
  * @file ads7952_types.hpp
  * @brief Type definitions for the ADS7952 driver
  * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ * @ingroup ads7952_types
  *
  * Provides enum classes, result structures, and configuration types used
  * throughout the ADS7952 driver and application code.
@@ -12,9 +13,16 @@
 
 namespace ads7952 {
 
+/**
+ * @defgroup ads7952_types Driver Types
+ * @ingroup ads7952_driver
+ * @brief Public enums, result payloads, and helper utilities.
+ */
+
 // =============================================================================
 // Operating Mode
 // =============================================================================
+/** @ingroup ads7952_types */
 enum class Mode : uint8_t {
   Manual,  ///< Host selects channel each frame
   Auto1,   ///< Device sequences through programmed channel mask
@@ -24,6 +32,7 @@ enum class Mode : uint8_t {
 // =============================================================================
 // Input Voltage Range
 // =============================================================================
+/** @ingroup ads7952_types */
 enum class Range : uint8_t {
   Vref,     ///< 0 to Vref (RANGE bit = 0)
   TwoVref,  ///< 0 to 2*Vref, clamped to VA (RANGE bit = 1)
@@ -32,6 +41,7 @@ enum class Range : uint8_t {
 // =============================================================================
 // Power-Down Control
 // =============================================================================
+/** @ingroup ads7952_types */
 enum class PowerDown : uint8_t {
   Normal,    ///< Normal operation
   PowerDown, ///< Device enters power-down
@@ -40,6 +50,7 @@ enum class PowerDown : uint8_t {
 // =============================================================================
 // Alarm Bound Selection
 // =============================================================================
+/** @ingroup ads7952_types */
 enum class AlarmBound : uint8_t {
   Low  = 0,  ///< Low alarm threshold register
   High = 1,  ///< High alarm threshold register
@@ -48,6 +59,7 @@ enum class AlarmBound : uint8_t {
 // =============================================================================
 // Error Codes
 // =============================================================================
+/** @ingroup ads7952_types */
 enum class Error : uint8_t {
   Ok = 0,            ///< Operation succeeded
   NotInitialized,    ///< Driver not initialized
@@ -61,6 +73,7 @@ enum class Error : uint8_t {
 // =============================================================================
 // GPIO 0/1 Alarm Assignment Modes
 // =============================================================================
+/** @ingroup ads7952_types */
 enum class GPIO01AlarmMode : uint8_t {
   GPIO                          = 0, ///< Both as general-purpose I/O
   GPIO0_HighAndLowAlarm         = 1, ///< GPIO0 = combined hi/lo alarm output
@@ -72,18 +85,30 @@ enum class GPIO01AlarmMode : uint8_t {
 // =============================================================================
 // GPIO Pin Index Constants (usable with SetGPIOOutputs and GPIOConfig)
 // =============================================================================
+/**
+ * @defgroup ads7952_gpio_bits GPIO Bit Masks
+ * @ingroup ads7952_types
+ * @brief Bit masks for GPIO pin addressing.
+ */
 namespace gpio {
+  /** @ingroup ads7952_gpio_bits */
   inline constexpr uint8_t kGPIO0 = 0x01; ///< Bit 0 — GPIO pin 0
+  /** @ingroup ads7952_gpio_bits */
   inline constexpr uint8_t kGPIO1 = 0x02; ///< Bit 1 — GPIO pin 1
+  /** @ingroup ads7952_gpio_bits */
   inline constexpr uint8_t kGPIO2 = 0x04; ///< Bit 2 — GPIO pin 2
+  /** @ingroup ads7952_gpio_bits */
   inline constexpr uint8_t kGPIO3 = 0x08; ///< Bit 3 — GPIO pin 3
+  /** @ingroup ads7952_gpio_bits */
   inline constexpr uint8_t kAll   = 0x0F; ///< All 4 GPIO pins
+  /** @ingroup ads7952_gpio_bits */
   inline constexpr uint8_t kNone  = 0x00; ///< No GPIO pins
 } // namespace gpio
 
 // =============================================================================
 // GPIO Configuration Structure
 // =============================================================================
+/** @ingroup ads7952_types */
 struct GPIOConfig {
   GPIO01AlarmMode alarm_mode         = GPIO01AlarmMode::GPIO;
   bool gpio2_as_range_input          = false; ///< GPIO2 controls RANGE externally
@@ -105,6 +130,7 @@ struct GPIOConfig {
 // =============================================================================
 // Single-Channel Read Result
 // =============================================================================
+/** @ingroup ads7952_types */
 struct ReadResult {
   uint16_t count   = 0;        ///< Raw 12-bit ADC count (0-4095)
   float    voltage = 0.0f;     ///< Converted voltage
@@ -117,6 +143,7 @@ struct ReadResult {
 // =============================================================================
 // Multi-Channel Readings Container
 // =============================================================================
+/** @ingroup ads7952_types */
 struct ChannelReadings {
   static constexpr uint8_t MAX_CHANNELS = 12;
 
@@ -159,8 +186,14 @@ struct ChannelReadings {
 // =============================================================================
 // Channel Mask Helpers
 // =============================================================================
+/**
+ * @defgroup ads7952_channel_masks Channel Mask Helpers
+ * @ingroup ads7952_types
+ * @brief Helpers and constants for Auto-1 sequence mask construction.
+ */
 
 /**
+ * @ingroup ads7952_channel_masks
  * @brief Construct a channel enable bitmask from a list of channel numbers.
  *
  * Bit ordering: bit N corresponds to channel N (bit 0 = CH0, bit 11 = CH11).
@@ -183,7 +216,10 @@ constexpr uint16_t ChannelMask(Channels... channels) noexcept {
   return mask & 0x0FFF;
 }
 
-/** @brief Build a contiguous channel range mask from first to last (inclusive). */
+/**
+ * @ingroup ads7952_channel_masks
+ * @brief Build a contiguous channel range mask from first to last (inclusive).
+ */
 constexpr uint16_t ChannelRangeMask(uint8_t first, uint8_t last) noexcept {
   if (first > 11 || last > 11 || first > last) return 0;
   // (1 << (last+1)) - (1 << first) generates contiguous set bits
@@ -191,6 +227,7 @@ constexpr uint16_t ChannelRangeMask(uint8_t first, uint8_t last) noexcept {
       ((1U << (last + 1)) - (1U << first)) & 0x0FFF);
 }
 
+/// @ingroup ads7952_channel_masks
 /// @name Predefined Auto-1 Channel Masks
 /// Bit ordering: bit N = channel N, bit 0 = CH0 (LSB).
 /// @{
@@ -205,8 +242,14 @@ inline constexpr uint16_t kThirdFour    = 0x0F00; ///< CH8–CH11
 // =============================================================================
 // Voltage-Count Conversion Helpers
 // =============================================================================
+/**
+ * @defgroup ads7952_conversion Conversion Helpers
+ * @ingroup ads7952_types
+ * @brief Lightweight utility functions for engineering-unit conversion.
+ */
 
 /**
+ * @ingroup ads7952_conversion
  * @brief Convert a voltage to a 12-bit ADC count.
  *
  * Useful for computing alarm thresholds from engineering units.

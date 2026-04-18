@@ -2,6 +2,7 @@
  * @file ads7952.ipp
  * @brief Template implementation for the ADS7952 driver
  * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ * @ingroup ads7952_core
  *
  * Implements all ADS7952 driver methods using direct imperative SPI frame
  * sequences. Each operation sends the required frames inline and returns
@@ -16,6 +17,11 @@
 #pragma once
 
 namespace ads7952 {
+
+/**
+ * @addtogroup ads7952_core
+ * @{
+ */
 
 // =============================================================================
 // Construction
@@ -419,3 +425,5 @@ constexpr uint8_t ADS7952<SpiType>::popcount16(uint16_t x) noexcept {
 }
 
 } // namespace ads7952
+
+/** @} */ // end of ads7952_core

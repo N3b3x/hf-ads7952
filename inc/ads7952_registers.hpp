@@ -2,6 +2,7 @@
  * @file ads7952_registers.hpp
  * @brief Register definitions and SPI frame constants for the ADS7952
  * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ * @ingroup ads7952_registers
  *
  * Complete register map derived from TI ADS79xx datasheet SLAS605C.
  * The ADS7952 uses 16-bit full-duplex SPI frames:
@@ -15,10 +16,17 @@
 namespace ads7952 {
 namespace reg {
 
+/**
+ * @defgroup ads7952_registers Register and Frame Constants
+ * @ingroup ads7952_driver
+ * @brief SPI frame bitfields and parser helpers for ADS7952 command/response words.
+ */
+
 // =============================================================================
 // Command Frame Mode Select — bits [15:12]
 // Datasheet Tables 1-7
 // =============================================================================
+/** @ingroup ads7952_registers */
 namespace Mode {
   inline constexpr uint16_t CONTINUE      = 0x0000;  // 0000: Continue previous
   inline constexpr uint16_t MANUAL        = 0x1000;  // 0001: Manual channel select
@@ -74,6 +82,7 @@ inline constexpr uint16_t OUTPUT_GPIO_DATA = 0x0010;  // DO[15:12] = GPIO data
 // =============================================================================
 // Bits [3:0]: GPIO output state
 // =============================================================================
+/** @ingroup ads7952_registers */
 namespace GPIO {
   inline constexpr uint16_t PIN0_HIGH = 0x0001;
   inline constexpr uint16_t PIN1_HIGH = 0x0002;
@@ -102,6 +111,7 @@ inline constexpr uint16_t Auto2LastChannel(uint8_t ch) noexcept {
 // GPIO Programming Register Layout (single frame, mode=0100)
 // Datasheet Table 11
 // =============================================================================
+/** @ingroup ads7952_registers */
 namespace GPIOProg {
   // Bit 9: Reset all registers
   inline constexpr uint16_t RESET_ALL_REGS   = 0x0200;
@@ -129,6 +139,7 @@ namespace GPIOProg {
 // Alarm Programming Register Layout (Frame 2 of alarm sequence)
 // Datasheet Table 13
 // =============================================================================
+/** @ingroup ads7952_registers */
 namespace Alarm {
   // Bits [15:14]: Channel within group (0-3)
   inline constexpr uint16_t ChannelInGroup(uint8_t ch_in_group) noexcept {
@@ -159,6 +170,7 @@ namespace Alarm {
 // =============================================================================
 // Response Frame Parsing — DO[15:12] channel, DO[11:0] data
 // =============================================================================
+/** @ingroup ads7952_registers */
 namespace Response {
   inline constexpr uint8_t GetChannel(uint16_t frame) noexcept {
     return static_cast<uint8_t>((frame >> 12) & 0x0F);

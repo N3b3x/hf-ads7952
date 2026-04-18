@@ -6,6 +6,8 @@
  * by configure_file() in cmake/hf_ads7952_build_settings.cmake.
  *
  * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ *
+ * @ingroup ads7952_driver
  */
 #ifndef ADS7952_VERSION_H
 #define ADS7952_VERSION_H
