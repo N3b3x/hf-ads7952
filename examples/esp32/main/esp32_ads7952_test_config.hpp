@@ -29,16 +29,16 @@
 namespace ADS7952_TestConfig {
 
 /**
- * @brief SPI Configuration for ESP32
+ * @brief SPI Configuration for ESP32-S3
  *
- * These pins are used for SPI communication with the ADS7952.
- * Ensure your hardware matches these pin assignments or modify accordingly.
+ * These pins use SPI2_HOST native IOMUX on ESP32-S3.
+ * GPIO10-13 are dedicated SPI2 pins for maximum performance.
  */
 struct SPIPins {
-    static constexpr uint8_t MISO = 19;          ///< GPIO19 - SPI MISO (Master In Slave Out)
-    static constexpr uint8_t MOSI = 23;          ///< GPIO23 - SPI MOSI (Master Out Slave In)
-    static constexpr uint8_t SCLK = 18;          ///< GPIO18 - SPI Clock (SCLK)
-    static constexpr uint8_t CS   = 5;           ///< GPIO5  - Chip Select (active low)
+    static constexpr uint8_t MISO = 13;          ///< GPIO13 - SPI2 MISO (native IOMUX)
+    static constexpr uint8_t MOSI = 11;          ///< GPIO11 - SPI2 MOSI (native IOMUX)
+    static constexpr uint8_t SCLK = 12;          ///< GPIO12 - SPI2 CLK (native IOMUX)
+    static constexpr uint8_t CS   = 10;          ///< GPIO10 - SPI2 CS (native IOMUX)
 };
 
 /**
@@ -55,8 +55,8 @@ struct SPIParams {
     static constexpr uint8_t QUEUE_SIZE = 1;          ///< Transaction queue size
     static constexpr uint8_t CS_ENA_PRETRANS = 1;     ///< CS asserted N clock cycles before transaction
     static constexpr uint8_t CS_ENA_POSTTRANS = 1;    ///< CS held N clock cycles after transaction
-    /// SPI host: 2 = SPI2_HOST, 3 = SPI3_HOST
-    static constexpr uint8_t SPI_HOST_ID = 2;
+    /// SPI host: 1 = SPI2_HOST (GPIO10-13 IOMUX on ESP32-S3)
+    static constexpr uint8_t SPI_HOST_ID = 1;
 };
 
 /**
