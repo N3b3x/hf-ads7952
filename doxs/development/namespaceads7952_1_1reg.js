@@ -51,9 +51,9 @@ var namespaceads7952_1_1reg =
       [ "GetChannel", "namespaceads7952_1_1reg_1_1Response.html#a7252166e76d9f499056aaed58827444f", null ],
       [ "GetData", "namespaceads7952_1_1reg_1_1Response.html#ac22d967e796409f5c035b3c6e8f224de", null ]
     ] ],
-    [ "Auto1ChannelBit", "namespaceads7952_1_1reg.html#ad0d61cdf97546e9e5c121bd9eaeb6970", null ],
-    [ "Auto2LastChannel", "namespaceads7952_1_1reg.html#af5a445a15e13c3483f645a9e94a795af", null ],
-    [ "ChannelSelect", "namespaceads7952_1_1reg.html#a62fd68cec3d8e56351356f2f59e1ea25", null ],
+    [ "Auto1ChannelBit", "group__ads7952__registers.html#gad0d61cdf97546e9e5c121bd9eaeb6970", null ],
+    [ "Auto2LastChannel", "group__ads7952__registers.html#gaf5a445a15e13c3483f645a9e94a795af", null ],
+    [ "ChannelSelect", "group__ads7952__registers.html#ga62fd68cec3d8e56351356f2f59e1ea25", null ],
     [ "CHANNELS_PER_ALARM_GROUP", "namespaceads7952_1_1reg.html#af001d97fd3f1679a76a451449989e3ba", null ],
     [ "INVALID_CONVERSIONS_AFTER_POWERUP", "namespaceads7952_1_1reg.html#acfc3914ac693596427647dfa041cf65f", null ],
     [ "MAX_COUNT", "namespaceads7952_1_1reg.html#ab89c4ed6c28bde3bd75af991190d5805", null ],
