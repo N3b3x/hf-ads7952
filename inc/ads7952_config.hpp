@@ -1,0 +1,78 @@
+/**
+ * @file ads7952_config.hpp
+ * @brief Compile-time configuration options for the ADS7952 driver
+ * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ *
+ * Provides sensible defaults that can be overridden via Kconfig (ESP-IDF),
+ * CMake definitions, or direct preprocessor defines.
+ */
+#pragma once
+#include <cstdint>
+
+#include "ads7952_types.hpp"
+
+namespace ADS7952_CFG {
+
+// ---- Operating mode default ------------------------------------------------
+#ifdef CONFIG_ADS7952_MODE_AUTO1
+inline constexpr ads7952::Mode DEFAULT_MODE = ads7952::Mode::Auto1;
+#elif defined(CONFIG_ADS7952_MODE_AUTO2)
+inline constexpr ads7952::Mode DEFAULT_MODE = ads7952::Mode::Auto2;
+#else
+inline constexpr ads7952::Mode DEFAULT_MODE = ads7952::Mode::Manual;
+#endif
+
+// ---- Input range default ---------------------------------------------------
+#ifdef CONFIG_ADS7952_RANGE_2VREF
+inline constexpr ads7952::Range DEFAULT_RANGE = ads7952::Range::TwoVref;
+#else
+inline constexpr ads7952::Range DEFAULT_RANGE = ads7952::Range::Vref;
+#endif
+
+// ---- Device constants ------------------------------------------------------
+inline constexpr uint8_t  NUM_CHANNELS    = 12;
+inline constexpr uint8_t  RESOLUTION_BITS = 12;
+inline constexpr uint16_t MAX_COUNT       = (1U << RESOLUTION_BITS) - 1;
+
+// ---- Voltage reference defaults --------------------------------------------
+#ifdef CONFIG_ADS7952_VREF_MV
+inline constexpr float DEFAULT_VREF = CONFIG_ADS7952_VREF_MV / 1000.0f;
+#else
+inline constexpr float DEFAULT_VREF = 2.5f;   // REF5025 typical
+#endif
+
+#ifdef CONFIG_ADS7952_VA_MV
+inline constexpr float DEFAULT_VA = CONFIG_ADS7952_VA_MV / 1000.0f;
+#else
+inline constexpr float DEFAULT_VA = 5.0f;     // Typical VA supply
+#endif
+
+// ---- Auto-1 default channel mask (all 12 channels) ------------------------
+#ifdef CONFIG_ADS7952_AUTO1_CHANNEL_MASK
+inline constexpr uint16_t DEFAULT_AUTO1_MASK = CONFIG_ADS7952_AUTO1_CHANNEL_MASK;
+#else
+inline constexpr uint16_t DEFAULT_AUTO1_MASK = 0x0FFF;
+#endif
+
+// ---- Auto-2 default last channel -------------------------------------------
+#ifdef CONFIG_ADS7952_AUTO2_LAST_CH
+inline constexpr uint8_t DEFAULT_AUTO2_LAST_CH = CONFIG_ADS7952_AUTO2_LAST_CH;
+#else
+inline constexpr uint8_t DEFAULT_AUTO2_LAST_CH = 11;
+#endif
+
+// ---- Safety margin frames for ReadAllChannels auto-read loop ---------------
+#ifdef CONFIG_ADS7952_READ_ALL_MAX_EXTRA
+inline constexpr uint8_t READ_ALL_MAX_EXTRA_FRAMES = CONFIG_ADS7952_READ_ALL_MAX_EXTRA;
+#else
+inline constexpr uint8_t READ_ALL_MAX_EXTRA_FRAMES = 4;
+#endif
+
+// ---- Max retries for mode change / programming operations ------------------
+#ifdef CONFIG_ADS7952_MAX_RETRIES
+inline constexpr uint8_t MAX_RETRIES = CONFIG_ADS7952_MAX_RETRIES;
+#else
+inline constexpr uint8_t MAX_RETRIES = 3;
+#endif
+
+} // namespace ADS7952_CFG
