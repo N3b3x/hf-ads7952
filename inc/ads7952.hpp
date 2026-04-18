@@ -2,11 +2,13 @@
  * @file ads7952.hpp
  * @brief Main driver class for the ADS7952 12-channel, 12-bit SAR ADC
  * @copyright Copyright (c) 2024-2025 HardFOC. All rights reserved.
+ * @ingroup ads7952_driver
  *
+ * @details
  * Hardware-agnostic C++20 driver for the Texas Instruments ADS7952
  * multichannel SAR ADC using CRTP for zero-overhead SPI abstraction.
  *
- * Key features ported from legacy code with datasheet-verified improvements:
+ * @section ads7952_hpp_features Key Features
  * - 12 analog input channels, 12-bit resolution, up to 1 MSPS
  * - Manual, Auto-1, and Auto-2 channel sequencing modes
  * - Configurable input range (Vref or 2*Vref, clamped to VA)
@@ -16,7 +18,7 @@
  * - Direct imperative SPI sequences (no state machine overhead)
  * - Proper first-frame discard after power-up per datasheet spec
  *
- * Usage:
+ * @section ads7952_hpp_usage Basic Usage
  * @code
  * class MySpi : public ads7952::SpiInterface<MySpi> {
  * public:
@@ -51,7 +53,23 @@
 namespace ads7952 {
 
 /**
+ * @defgroup ads7952_driver ADS7952 Driver
+ * @brief Hardware-agnostic C++20 driver for the TI ADS7952 ADC family.
+ */
+
+/**
+ * @defgroup ads7952_core Core Driver API
+ * @ingroup ads7952_driver
+ * @brief High-level class for initialization, conversion, sequencing, and programming.
+ */
+
+/**
+ * @ingroup ads7952_core
  * @brief Main driver class for the ADS7952 ADC.
+ *
+ * Provides a synchronous, command-oriented API over the ADS7952 SPI protocol.
+ * The class is transport-agnostic and relies on a CRTP SPI implementation.
+ *
  * @tparam SpiType Platform-specific SPI class derived from SpiInterface<SpiType>
  */
 template <typename SpiType>
@@ -102,6 +120,7 @@ public:
 
   /**
    * @brief Read a single ADC channel (switches to Manual mode).
+   * @pre EnsureInitialized() has been called successfully.
    * @param channel Channel number (0-11)
    * @return ReadResult with count, voltage, channel, and error status
    */
@@ -112,6 +131,7 @@ public:
    *
    * Enters Auto-1 mode with channel counter reset and reads until
    * all programmed channels are received or timeout.
+   * @pre EnsureInitialized() has been called successfully.
    *
    * @return ChannelReadings with per-channel counts and voltages
    */
@@ -340,8 +360,11 @@ public:
   // ===========================================================================
   // Version
   // ===========================================================================
+  /** @brief Driver semantic major version. */
   static constexpr uint8_t GetDriverVersionMajor() noexcept { return 1; }
+  /** @brief Driver semantic minor version. */
   static constexpr uint8_t GetDriverVersionMinor() noexcept { return 0; }
+  /** @brief Driver semantic patch version. */
   static constexpr uint8_t GetDriverVersionPatch() noexcept { return 0; }
 
 private:

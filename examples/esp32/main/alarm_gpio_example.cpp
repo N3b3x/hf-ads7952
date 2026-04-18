@@ -1,16 +1,18 @@
 /**
  * @file alarm_gpio_example.cpp
  * @brief Demonstrates alarm threshold programming and GPIO control
+ * @ingroup ads7952_examples_esp32
+ * @example alarm_gpio_example.cpp
  *
- * This example shows:
+ * @details
+ * Demonstrates alarm-threshold programming and GPIO behavior on ADS7952.
+ *
+ * @section alarm_gpio_flow Example Flow
  * - Programming alarm thresholds (low and high) on multiple channels
  * - Configuring GPIO pins as outputs
  * - Toggling GPIO output levels
  * - Configuring GPIO0/1 as alarm outputs
  * - Reading channels and checking against alarm thresholds
- *
- * @author N3b3x
- * @date 2025
  */
 
 #include "esp_log.h"
@@ -25,6 +27,7 @@
 
 static const char *TAG = "ADS7952_AlarmGPIO";
 
+/** @brief ESP-IDF entrypoint running alarm and GPIO demonstration loop. */
 extern "C" void app_main(void) {
   ESP_LOGI(TAG, "ADS7952 Alarm & GPIO Example");
   ESP_LOGI(TAG, "=============================");

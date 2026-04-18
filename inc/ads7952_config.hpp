@@ -5,6 +5,8 @@
  *
  * Provides sensible defaults that can be overridden via Kconfig (ESP-IDF),
  * CMake definitions, or direct preprocessor defines.
+ *
+ * @ingroup ads7952_driver
  */
 #pragma once
 #include <cstdint>
@@ -12,6 +14,17 @@
 #include "ads7952_types.hpp"
 
 namespace ADS7952_CFG {
+
+/**
+ * @defgroup ads7952_config Compile-Time Configuration
+ * @ingroup ads7952_driver
+ * @brief Build-time defaults and tuning knobs for the ADS7952 driver.
+ *
+ * These constants define startup behavior (mode, range, channel sequencing),
+ * electrical assumptions (Vref/VA), and bounded runtime loop behavior.
+ * Values can be overridden from the build system using CONFIG_ADS7952_* macros.
+ * @{
+ */
 
 // ---- Operating mode default ------------------------------------------------
 #ifdef CONFIG_ADS7952_MODE_AUTO1
@@ -75,4 +88,5 @@ inline constexpr uint8_t MAX_RETRIES = CONFIG_ADS7952_MAX_RETRIES;
 inline constexpr uint8_t MAX_RETRIES = 3;
 #endif
 
+/** @} */
 } // namespace ADS7952_CFG
