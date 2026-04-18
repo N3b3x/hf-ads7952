@@ -45,11 +45,13 @@ endif()
 #===============================================================================
 # Public include directories
 #===============================================================================
-# Two include directories:
+# Three include directories:
 #   1. Source tree inc/ — hand-written headers (ads7952.hpp, etc.)
-#   2. Build tree generated dir — configure_file outputs (ads7952_version.h)
+#   2. Source tree src/ — template implementation files (ads7952.ipp)
+#   3. Build tree generated dir — configure_file outputs (ads7952_version.h)
 set(HF_ADS7952_PUBLIC_INCLUDE_DIRS
     "${CMAKE_CURRENT_LIST_DIR}/../inc"
+    "${CMAKE_CURRENT_LIST_DIR}/../src"
     "${HF_ADS7952_VERSION_HEADER_DIR}"
 )
 
