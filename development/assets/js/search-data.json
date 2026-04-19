@@ -659,7 +659,7 @@
   },"94": {
     "doc": "🔌 Hardware Setup",
     "title": "🔌 Hardware Setup",
-    "content": "This guide covers the physical connections between the ADS7952 and your microcontroller, power supply requirements, and SPI bus configuration. ",
+    "content": ". This guide covers the physical connections between the ADS7952 and your microcontroller, power supply requirements, and SPI bus configuration. ",
     "url": "/hf-ads7952/development/docs/hardware_setup/",
     
     "relUrl": "/docs/hardware_setup/"

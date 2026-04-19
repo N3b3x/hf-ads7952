@@ -1,4 +1,4 @@
-warning: Tag 'CLASS_DIAGRAMS' at line 287 of file '/tmp/doxyfile.1q74cH' has become obsolete.
+warning: Tag 'CLASS_DIAGRAMS' at line 287 of file '/tmp/doxyfile.ACKyZh' has become obsolete.
          To avoid this warning please remove this line from your configuration file or upgrade it using "doxygen -u"
 /home/runner/work/hf-ads7952-driver/hf-ads7952-driver/src/ads7952.ipp:467: warning: unbalanced grouping commands
 error: Style sheet '_config/doxygen-extensions/doxygen-awesome-css/doxygen-awesome.css' specified by HTML_EXTRA_STYLESHEET does not exist!
@@ -166,22 +166,22 @@ index:1: warning: expected whitespace after \{ command
 /home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:27: warning: unable to resolve reference to '-references' for \ref command
 /home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:28: warning: unable to resolve reference to '-contributing' for \ref command
 /home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:29: warning: unable to resolve reference to '-license' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:94: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/installation.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:94: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/quickstart.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:99: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/platform_integration.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:106: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/installation.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:149: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/api_reference.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:162: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/examples.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:166: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/index.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:170: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/installation.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:171: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/quickstart.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:172: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/hardware_setup.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:173: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/platform_integration.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:174: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/configuration.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:175: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/api_reference.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:176: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/examples.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:177: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/troubleshooting.md' for \ref command
-/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:178: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/cmake_integration.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:96: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/installation.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:96: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/quickstart.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:101: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/platform_integration.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:108: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/installation.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:151: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/api_reference.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:164: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/examples.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:168: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/index.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:172: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/installation.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:173: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/quickstart.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:174: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/hardware_setup.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:175: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/platform_integration.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:176: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/configuration.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:177: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/api_reference.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:178: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/examples.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:179: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/troubleshooting.md' for \ref command
+/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/README.md:180: warning: unable to resolve reference to '/home/runner/work/hf-ads7952-driver/hf-ads7952-driver/docs/cmake_integration.md' for \ref command
 Generating docs for file inc/ads7952_config.hpp...
 Generating docs for file inc/ads7952_registers.hpp...
 Generating docs for file inc/ads7952_spi_interface.hpp...
