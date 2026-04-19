@@ -60,6 +60,12 @@ inline constexpr float DEFAULT_VA = CONFIG_ADS7952_VA_MV / 1000.0f;
 inline constexpr float DEFAULT_VA = 5.0f;     // Typical VA supply
 #endif
 
+// ---- Voltage reference limits (per ADS7952 datasheet) ---------------------
+inline constexpr float MIN_VREF = 1.0f;   // Minimum Vref (datasheet limit)
+inline constexpr float MAX_VREF = 2.5f;   // Maximum Vref (datasheet limit)
+inline constexpr float MIN_VA   = 2.7f;   // Minimum VA (datasheet absolute min)
+inline constexpr float MAX_VA   = 5.5f;   // Maximum VA (datasheet absolute max)
+
 // ---- Auto-1 default channel mask (all 12 channels) ------------------------
 #ifdef CONFIG_ADS7952_AUTO1_CHANNEL_MASK
 inline constexpr uint16_t DEFAULT_AUTO1_MASK = CONFIG_ADS7952_AUTO1_CHANNEL_MASK;

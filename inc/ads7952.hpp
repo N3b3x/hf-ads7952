@@ -85,10 +85,12 @@ public:
    * @param spi  Reference to platform-specific SPI interface
    * @param vref REFP pin voltage in volts (default 2.5V for REF5025)
    * @param va   VA supply voltage in volts (default 5.0V)
+    * @param initial_range Initial input range to apply for conversions
    */
   explicit ADS7952(SpiType &spi,
                    float vref = ADS7952_CFG::DEFAULT_VREF,
-                   float va   = ADS7952_CFG::DEFAULT_VA) noexcept;
+               float va   = ADS7952_CFG::DEFAULT_VA,
+               Range initial_range = ADS7952_CFG::DEFAULT_RANGE) noexcept;
 
   ADS7952(const ADS7952 &) = delete;
   ADS7952 &operator=(const ADS7952 &) = delete;
@@ -344,11 +346,37 @@ public:
   // Diagnostics
   // ===========================================================================
 
-  /** @brief Get the configured reference voltage (Vref). */
-  float GetVref() const noexcept { return vref_; }
-
   /** @brief Get the active voltage reference (affected by range setting). */
   float GetActiveVref() const noexcept { return active_vref_; }
+
+  /** @brief Get the configured Vref (REFP pin voltage). */
+  float GetVref() const noexcept { return vref_; }
+
+  /** @brief Get the configured VA supply voltage. */
+  float GetVA() const noexcept { return va_; }
+
+  /**
+   * @brief Update the Vref value for voltage calculations.
+   *
+   * Use this for runtime calibration when Vref is measured externally.
+   * Updates both vref_ and two_vref_ (2×Vref) accordingly.
+   *
+   * @param vref New Vref voltage in volts (clamped to 1.0V–2.5V)
+   * @note Does not send any SPI commands — purely for software calculations.
+   */
+  void SetVref(float vref) noexcept;
+
+  /**
+   * @brief Update the VA supply voltage value.
+   *
+   * Use this for runtime calibration when VA is measured (e.g., via
+   * resistor divider on an ADC channel). VA is used for validation
+   * and ratiometric sensor calculations.
+   *
+   * @param va New VA voltage in volts (clamped to 2.7V–5.5V)
+   * @note Does not send any SPI commands — purely for software calculations.
+   */
+  void SetVA(float va) noexcept;
 
   /** @brief Get the Auto-1 programmed channel mask.
    *  Bit ordering: bit N = channel N (bit 0 = CH0, bit 11 = CH11). */
@@ -393,9 +421,9 @@ private:
   SpiType &spi_;
 
   // Voltage references
-  float vref_;          ///< REFP pin voltage
-  float va_;            ///< VA supply voltage
-  float two_vref_;      ///< min(2 * vref, va)
+  float vref_;          ///< REFP pin voltage (1.0V to 2.5V per datasheet)
+  float va_;            ///< VA supply voltage (for validation/ratiometric use)
+  float two_vref_;      ///< 2 × vref (full-scale for 2×Vref range mode)
   float active_vref_;   ///< Currently selected reference for conversions
 
   // Device state tracking

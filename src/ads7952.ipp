@@ -28,13 +28,31 @@ namespace ads7952 {
 // =============================================================================
 
 template <typename SpiType>
-/** @copydoc ADS7952::ADS7952(SpiType&,float,float) */
-ADS7952<SpiType>::ADS7952(SpiType &spi, float vref, float va) noexcept
+/** @copydoc ADS7952::ADS7952(SpiType&,float,float,Range) */
+ADS7952<SpiType>::ADS7952(SpiType &spi, float vref, float va, Range initial_range) noexcept
     : spi_(spi),
-      vref_(vref),
-      va_(va),
-      two_vref_((std::min)(2.0f * vref, va)),
-      active_vref_(vref) {}
+      vref_((std::max)(ADS7952_CFG::MIN_VREF, (std::min)(vref, ADS7952_CFG::MAX_VREF))),
+      va_((std::max)(ADS7952_CFG::MIN_VA, (std::min)(va, ADS7952_CFG::MAX_VA))),
+      two_vref_(2.0f * vref_),
+  active_vref_((initial_range == Range::TwoVref) ? two_vref_ : vref_),
+  range_(initial_range) {}
+
+// =============================================================================
+// Runtime Calibration
+// =============================================================================
+
+template <typename SpiType>
+void ADS7952<SpiType>::SetVref(float vref) noexcept {
+  vref_ = (std::max)(ADS7952_CFG::MIN_VREF, (std::min)(vref, ADS7952_CFG::MAX_VREF));
+  two_vref_ = 2.0f * vref_;
+  // Update active_vref_ based on current range setting
+  active_vref_ = (range_ == Range::TwoVref) ? two_vref_ : vref_;
+}
+
+template <typename SpiType>
+void ADS7952<SpiType>::SetVA(float va) noexcept {
+  va_ = (std::max)(ADS7952_CFG::MIN_VA, (std::min)(va, ADS7952_CFG::MAX_VA));
+}
 
 // =============================================================================
 // Initialization
