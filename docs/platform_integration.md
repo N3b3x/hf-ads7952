@@ -15,6 +15,8 @@ The HF-ADS7952 driver uses the **Curiously Recurring Template Pattern (CRTP)** t
 
 ## Architecture
 
+![ADS7952 software stack](assets/ads7952-software-stack.svg)
+
 ```
 ┌──────────────────────────────────────┐
 │  ADS7952<SpiType>                    │   ← Driver (platform-agnostic)

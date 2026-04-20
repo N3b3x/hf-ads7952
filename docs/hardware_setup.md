@@ -160,6 +160,8 @@ If you don't need GPIO/alarm features, these pins can be left unconnected.
 
 ## Typical Schematic
 
+![ADS7952 wiring](assets/ads7952-wiring.svg)
+
 ```
                     ┌──────────────┐
        MOSI ───────┤ SDI     AVDD ├──── 5.0V + 100nF ∥ 10µF
